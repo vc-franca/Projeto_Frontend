@@ -1,5 +1,128 @@
 body {
-    background-color: #000000; /* bg-dark */
-    color: #f8f9fa; /* text-light */
+  background-color: #000000;
+  color: #e6f1fd;
+}
+
+.carousel {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.carousel-img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 800px;
+  height: 500px;
+}
+
+/* Estilos da Seção de Filmes */
+.filmes-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.filmes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Estilos dos Cards de Filme */
+.filme-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.filme-card:hover {
+  transform: translateY(-5px);
+}
+
+.filme-imagem-container {
+  position: relative;
+}
+
+.filme-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.classificacao-indicativa {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filme-info {
+  padding: 20px;
+  color: #fff;
+}
+
+.filme-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.filme-ano-diretor {
+  color: #aaa;
+  margin: 0 0 15px;
+  font-size: 0.9rem;
+}
+
+.filme-descricao {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.assistir-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.assistir-btn.ativo {
+  background: rgba(132, 0, 255, 0.8);
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .filmes-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   
+  .carousel-img {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+  }
+  
+  .classificacao-indicativa {
+      width: 30px;
+      height: 30px;
+  }
+}
