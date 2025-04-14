@@ -1,3 +1,5 @@
+import '../Footer/Footer.css';
+
 export default function Footer() {
     return (
         <footer className="pt-3 d-flex flex-column justify-content-center align-items-center gap-5 bg-dark text-white">
@@ -7,9 +9,9 @@ export default function Footer() {
             </section>
 
             <section className="w-100 d-flex justify-content-center gap-5 border-bottom">
-                <div><p>Programação</p></div>
-                <div><p>Sua Sessão</p></div>
-                <div><p>Snacks</p></div>
+                <div><a href="" className="programacao">Programação</a></div>
+                <div><a href="" className="suaSessao">Sua Sessão</a></div>
+                <div><a href="" className="snacks">Snacks</a></div>
             </section>
 
             <div>

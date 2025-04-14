@@ -1,125 +1,76 @@
 'use client';
-import { useState } from 'react';
+import snacks from '../../data/snacks';
+import combos from '../../data/combos';
+import snacksEspeciais from '../../data/snacksEspeciais';
+import Counter from '../../components/Counter/Counter';
+// ../../../public/snack_especial1.png
 
 export default function Snackbar() {
-    const [contador, setContador] = useState(0);
-
-    const handleMais = () => {
-        (contador >= 3) ? setContador(3) : setContador(contador + 1);
-    }
-
-    const handleMenos = () => {
-        (contador <= 0) ? setContador(0) : setContador(contador - 1);
-    }
-
-    const snacks = [
-        {
-            id: 1,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 2,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 3,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 4,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 5,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 6,
-            nome: 'pipoca',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-    ];
-
-    const combos = [
-        {
-            id: 1,
-            nome: 'pipoca e refri',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 2,
-            nome: 'pipoca e refri',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 3,
-            nome: 'pipoca e refri',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-        {
-            id: 4,
-            nome: 'pipoca e refri',
-            preco: 25.50,
-            desc: 'Pipoca cremosa com coberturas opcionais',
-            img: '/pipoca.jfif',
-        },
-    ];
-
     return (
-        <div className="bg-black text-white" style={{ minHeight: "100vh" }}>
-            <section>
-                <h2>Combos Especiais</h2>
 
-                <div>
+        <div className="bg-black text-white d-flex justify-content-center" style={{ minHeight: "100vh" }}>
+            <main className="w-75 d-flex flex-column" style={{ gap: "70px" }}>
 
-                </div>
-            </section>
-            <section>
-                <h2>Ache seu snack ideal</h2>
+                {/* COMBOS */}
+                <section className="d-flex flex-column align-items-center">
+                    <h2>Combos</h2>
 
-                {/* SNACK CARD */}
-                <div className="row d-flex justify-content-center gap-5 ps-5 pe-5">
-                    {snacks.map((snack) => (
-                        <div key={snack.id} className="col p-3 bg-dark bg-gradient w-165 d-flex flex-column justify-content-center align-items-center border border-dark rounded-4 border-1">
-                            <img src={snack.img} alt={snack.name} className="rounded-4" style={{ width: "165px" }} />
-                            <p className="d-flex flex-column justify-content-center">{snack.desc}</p>
-                            <p>R$ {snack.preco}</p>
-                            <div>{snack.name}</div>
+                    <div className="row d-flex justify-content-center gap-5 ps-5 pe-5">
+                        {combos.map((combo) => {
+                            return (
+                                <div key={combo.id} className="col p-3 bg-dark bg-gradient w-165 d-flex flex-column justify-content-center align-items-center border border-dark rounded-4 border-1">
+                                    <img src={combo.img} alt={combo.name} className="rounded-4" style={{ width: "165px" }} />
+                                    <p className="d-flex flex-column justify-content-center">{combo.desc}</p>
+                                    <p>R$ {combo.preco}</p>
+                                    <div>{combo.name}</div>
 
-                            {/* CONTADOR */}
-                            <div className="d-flex gap-3">
-                                <button className="btn" onClick={handleMenos} style={{ backgroundColor: "purple", color: "white" }}>-</button>
-                                <span>{contador}</span>
-                                <button className="btn" onClick={handleMais} style={{ backgroundColor: "purple", color: "white" }}>+</button>
-                            </div>
+                                    <Counter />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
 
-                        </div>
-                    ))}
-                </div>
-            </section>
+                {/* SNACKS */}
+                <section className="d-flex flex-column align-items-center">
+                    <h2>Ache seu snack ideal</h2>
+
+                    <div className="row d-flex justify-content-center gap-5 ps-5 pe-5">
+                        {snacks.map((snack) => {
+                            return (
+                                <div key={snack.id} className="col p-3 bg-dark bg-gradient w-165 d-flex flex-column justify-content-center align-items-center border border-dark rounded-4 border-1">
+                                    <img src={snack.img} alt={snack.name} className="rounded-4" style={{ width: "165px" }} />
+                                    <p className="d-flex flex-column justify-content-center">{snack.desc}</p>
+                                    <p>R$ {snack.preco}</p>
+                                    <div>{snack.name}</div>
+
+                                    <Counter />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
+
+                {/* SNACKS ESPECIAIS*/}
+                <section className="d-flex flex-column align-items-center">
+                    <h2>Combos Especiais</h2>
+
+                    <div className="row d-flex justify-content-center gap-5 ps-5 pe-5">
+                        {snacksEspeciais.map((snackEsp) => {
+                            return (
+                                <div key={snackEsp.id} className="col p-3 bg-dark bg-gradient w-165 d-flex flex-column justify-content-center align-items-center border border-dark rounded-4 border-1">
+                                    <img src={snackEsp.img} alt={snackEsp.name} className="rounded-4" style={{ width: "165px" }} />
+                                    <p className="d-flex flex-column justify-content-center">{snackEsp.desc}</p>
+                                    <p>R$ {snackEsp.preco}</p>
+                                    <div>{snackEsp.name}</div>
+
+                                    <Counter />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
+            </main>
         </div>
     );
 }
