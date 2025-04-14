@@ -85,6 +85,8 @@ export default function Home() {
   return (
     <main className="home-container">
       {/* Seção do Carrossel */}
+
+      
 <br></br>
 <br></br>
 <br></br>
@@ -137,7 +139,7 @@ export default function Home() {
 
       {/* Seção dos Filmes */}
       <div className="filmes-section">
-        <h2 className="section-title">FILMES EM DESTAQUE</h2>
+        <h2 className="text-center mb-5 display-5">FILMES EM DESTAQUE</h2>
         <div className="filmes-grid">
           {filmes.map((filme) => (
             <FilmeCard key={filme.id} filme={filme} />
@@ -147,7 +149,7 @@ export default function Home() {
 
       {/* Nova Seção Curtanocinerv */}
       <div className="curtanocinerv">
-        <h2 className="section-title">CURTA NO CINE RV </h2>
+        <h2 className="text-center mb-5 display-5">CURTA NO CINE RV </h2>
         <div className="curtanocinerv-grid">
           <div className="curtanocinerv-box">
             <Image src="/img_home/pipoca.jpg" width={500} height={500} alt="Imagem 1" className="curtanocinerv-img" />
