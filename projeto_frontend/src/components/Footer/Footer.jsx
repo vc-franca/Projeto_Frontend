@@ -1,11 +1,9 @@
-import '../Footer/Footer.css';
-
 export default function Footer() {
     return (
         <footer className="pt-3 d-flex flex-column justify-content-center align-items-center gap-5 bg-dark text-white">
 
             <section>
-                <button className="btn" style={{ backgroundColor: "purple" }}><a href="/club" style={{ color: "white" }} className="list-none">Entre no RV Club!</a></button>
+                <button className="btn" style={{ backgroundColor: "purple" }}><a href="/rvclub" style={{ color: "white" }} className="list-none">Entre no RV Club!</a></button>
             </section>
 
             <section className="w-100 d-flex justify-content-center gap-5 border-bottom">
