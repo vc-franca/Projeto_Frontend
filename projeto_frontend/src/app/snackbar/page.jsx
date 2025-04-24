@@ -8,7 +8,7 @@ import Counter from '../../components/Counter/Counter';
 export default function Snackbar() {
     return (
 
-        <div className="bg-black text-white d-flex justify-content-center" style={{ minHeight: "100vh" }}>
+        <div className="bg-black text-white d-flex justify-content-center pb-5" style={{ minHeight: "100vh" }}>
             <main className="w-75 d-flex flex-column" style={{ gap: "70px" }}>
 
                 {/* COMBOS */}

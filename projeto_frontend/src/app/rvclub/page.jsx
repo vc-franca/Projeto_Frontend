@@ -11,7 +11,7 @@ export default function Rvclub() {
                     <div className="d-flex justify-content-center gap-5 ps-5 pe-5">
                         {assinaturas.map((ass) => {
                             return (
-                                <div key={ass.id} className="p-3 bg-dark bg-gradient w-165 d-flex flex-column justify-content-center rounded-4">
+                                <div key={ass.id} className="p-3 bg-dark bg-gradient w-165 d-flex flex-column rounded-4">
                                     <div className="d-flex flex-column justify-content-center align-items-center text-center gap-3">
                                         <h3 className="w-75 border-bottom">{ass.nome}</h3>
                                         <p className="w-75 border-bottom">{ass.desc}</p>
