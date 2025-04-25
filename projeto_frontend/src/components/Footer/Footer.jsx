@@ -7,8 +7,8 @@ export default function Footer() {
             </section>
 
             <section className="w-100 d-flex justify-content-center gap-5 border-bottom">
-                <div><a href="" className="programacao">Programação</a></div>
-                <div><a href="" className="suaSessao">Sua Sessão</a></div>
+                <div><a href="/" className="programacao">Programação</a></div>
+                <div><a href="/suasessao" className="suaSessao">Sua Sessão</a></div>
                 <div><a href="/snackbar" className="snacks">Snacks</a></div>
             </section>
 
