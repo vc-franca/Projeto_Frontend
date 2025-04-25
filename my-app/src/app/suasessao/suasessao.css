@@ -4,6 +4,13 @@ body {
 }
 
 
+.faq-banner img {
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Cobre o espaço disponível */
+  border-radius: 10px; /* Adiciona borda arredondada */
+}
+
 
 .faq-imagens {
   display: flex;
@@ -64,3 +71,4 @@ body {
   background-color: #111;
   transition: all 0.2s ease;
 }
+

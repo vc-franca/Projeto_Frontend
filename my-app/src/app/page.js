@@ -35,48 +35,48 @@ export default function Home() {
     },
     {
       id: 4,
-      titulo: "BRANCA DE NEVE (2025)",
-      ano: 2025,
-      diretor: "Marc Webb",
-      descricao: "Branca de Neve foge da cruel Rainha Má e encontra novos aliados na floresta para enfrentar seus perigosos planos.",
-      imagem: "/filmes/brancadeneve.webp",
-      classificacao: "/faixa/10.jpg"
+      titulo: "STAR WARS: EPISÓDIO III - A VINGANÇA DOS SITH (RE)",
+    ano: 2005,
+  diretor: "George Lucas",
+  descricao: "Anakin se volta para o lado sombrio, traindo os Jedi, e a República vira Império Galáctico.",
+      imagem: "/filmes/starwars.webp",
+      classificacao: "/faixa/14.png"
     },
     {
       id: 5,
-      titulo: "BRANCA DE NEVE (2025)",
+      titulo: "SUPERMAN: LEGACY",
       ano: 2025,
-      diretor: "Marc Webb",
-      descricao: "Branca de Neve foge da cruel Rainha Má e encontra novos aliados na floresta para enfrentar seus perigosos planos.",
-      imagem: "/filmes/brancadeneve.webp",
-      classificacao: "/faixa/10.jpg"
+      diretor: "James Gunn",
+      descricao: "Clark equilibra suas origens, enfrenta ameaças poderosas e vira símbolo de esperança num mundo cético e dividido.",
+      imagem: "/filmes/superman.webp",
+      classificacao: "/faixa/12.jpg"
     },
     {
       id: 6,
-      titulo: "BRANCA DE NEVE (2025)",
+      titulo: "COMO TREINAR SEU DRAGÃO",
       ano: 2025,
-      diretor: "Marc Webb",
-      descricao: "Branca de Neve foge da cruel Rainha Má e encontra novos aliados na floresta para enfrentar seus perigosos planos.",
-      imagem: "/filmes/brancadeneve.webp",
-      classificacao: "/faixa/10.jpg"
+      diretor: "Dean DeBlois",
+      descricao: "Soluço faz amizade com Banguela, um dragão Fúria da Noite, e transforma a vida de sua vila viking.",
+      imagem: "/filmes/como treinar seu dragao.webp",
+      classificacao: "/faixa/12.jpg"
     },
     {
       id: 7,
-      titulo: "BRANCA DE NEVE (2025)",
+      titulo: "COLORFUL STAGE! O FILME: UMA MIKU QUE NÃO SABE CANTAR",
       ano: 2025,
-      diretor: "Marc Webb",
-      descricao: "Branca de Neve foge da cruel Rainha Má e encontra novos aliados na floresta para enfrentar seus perigosos planos.",
-      imagem: "/filmes/brancadeneve.webp",
-      classificacao: "/faixa/10.jpg"
+      diretor: "Hiroyuki Hata",
+      descricao: "Ichika ajuda Miku a recuperar sua voz e a confiança através da música.",
+      imagem: "/filmes/miko.webp",
+      classificacao: "/faixa/16.jpg"
     },
     {
       id: 8,
-      titulo: "BRANCA DE NEVE (2025)",
+      titulo: "QUARTETO FANTÁSTICO: PRIMEIROS PASSOS",
       ano: 2025,
-      diretor: "Marc Webb",
-      descricao: "Branca de Neve foge da cruel Rainha Má e encontra novos aliados na floresta para enfrentar seus perigosos planos.",
-      imagem: "/filmes/brancadeneve.webp",
-      classificacao: "/faixa/10.jpg"
+      diretor: "Matt Shakman",
+      descricao: "Reed, Sue, Johnny e Ben enfrentam Galactus e a Surfista Prateada, defendendo a Terra.",
+      imagem: "/filmes/quarteto.webp",
+      classificacao: "/faixa/16.jpg"
     }
 
 
@@ -152,13 +152,13 @@ export default function Home() {
         <h2 className="text-center mb-5 display-5">CURTA NO CINE RV </h2>
         <div className="curtanocinerv-grid">
           <div className="curtanocinerv-box">
-            <Image src="/img_home/pipoca.jpg" width={500} height={500} alt="Imagem 1" className="curtanocinerv-img" />
+            <Image src="/combo1.webp" width={500} height={500} alt="Imagem 1" className="curtanocinerv-img" />
           </div>
           <div className="curtanocinerv-box">
-            <Image src="/img_home/pipoca.jpg" width={500} height={500} alt="Imagem 2" className="curtanocinerv-img" />
+            <Image src="/combo2.webp" width={500} height={500} alt="Imagem 2" className="curtanocinerv-img" />
           </div>
           <div className="curtanocinerv-box">
-            <Image src="/img_home/pipoca.jpg" width={500} height={500} alt="Imagem 3" className="curtanocinerv-img" />
+            <Image src="/combo3.webp" width={500} height={500} alt="Imagem 3" className="curtanocinerv-img" />
           </div>
         </div>
       </div>

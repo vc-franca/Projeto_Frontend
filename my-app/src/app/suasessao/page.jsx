@@ -1,59 +1,44 @@
-"use client";
 import './suasessao.css';
 
 export default function SuaSessao() {
   const perguntas = [
     {
       id: "pergunta1",
-      titulo: "🎬 Como faço para assistir um filme?",
-      resposta: "Basta clicar no filme desejado e pressionar o botão 'Assistir'.",
+      titulo: "🎬 Como posso assistir aos filmes disponíveis?",
+      resposta: "Basta escolher o filme que deseja assistir e clicar no botão 'Assistir Mais Tarde'.",
     },
     {
       id: "pergunta2",
-      titulo: "💰 Preciso pagar para usar o site?",
-      resposta: "Não! O acesso aos filmes é totalmente gratuito.",
+      titulo: "💰 Preciso pagar para acessar o conteúdo?",
+      resposta: "Sim, temos todas as opções de ingresso no site .",
     },
     {
       id: "pergunta3",
-      titulo: "📝 Os filmes têm legenda?",
+      titulo: "📝 Os filmes têm legendas?",
       resposta: "Sim, a maioria dos filmes possui legendas em português.",
     },
     {
       id: "pergunta4",
-      titulo: "📱 Posso assistir no celular?",
-      resposta: "Sim! O site é totalmente responsivo e funciona bem em qualquer dispositivo.",
+      titulo: "📱 O site funciona bem em dispositivos móveis?",
+      resposta: "Sim! O site é totalmente responsivo e pode ser acessado no celular ou tablet.",
     },
     {
       id: "pergunta5",
-      titulo: "⏳ Os filmes ficam disponíveis por tempo limitado?",
-      resposta: "Não. Os filmes ficam disponíveis enquanto estiverem em nosso catálogo.",
+      titulo: "⏳ Os filmes ficam disponíveis por quanto tempo?",
+      resposta: "Os filmes estão disponíveis por tempo indeterminado enquanto permanecerem no catálogo.",
     },
     {
       id: "pergunta6",
-      titulo: "🔍 Como encontro um filme específico?",
-      resposta: "Use a barra de busca no topo da página para procurar pelo nome do filme.",
+      titulo: "🔍 Como assino o planos ?",
+      resposta: "Você clica na aba 'planos' e lá terá os planos para o usúario assinar",
     },
   ];
 
-
-
-
-
-
-
   return (
     <div className="container faq-container py-5">
-
-
-  
-<div className="faq-imagens mb-4 text-center">
-<br></br>
+      
       <br></br>
-
-  <img src="/img_home/suasessao.png" alt="Imagem 1" className="faq-img mx-2" />
-</div>
-
-
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
