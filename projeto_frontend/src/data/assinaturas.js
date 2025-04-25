@@ -9,6 +9,7 @@ const assinaturas = [
             'Acesso antecipado a lançamentos',
             '1 combo grátis por mês'
         ],
+        cor: 'brown',
     },
     {
         id: 2,
@@ -21,6 +22,7 @@ const assinaturas = [
             '2 combos grátis por mês',
             'Brinde surpresa trimestral'
         ],
+        cor: 'dark',
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ const assinaturas = [
             'Brinde surpresa mensal',
             'Atendimento prioritário via WhatsApp'
         ],
+        cor: 'yellow',
     },
 ];
 
